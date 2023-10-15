@@ -10,6 +10,8 @@ USER python
 
 WORKDIR /home/python/app
 
+RUN echo 'HISTFILE=//home/python/zsh/.zsh_history' >> ~/.bashrc
+
 ENV PYTHONPATH=${PYTHONPATH}/home/python/app/src
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-arm64
 
